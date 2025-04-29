@@ -19,7 +19,7 @@ const Home = () => {
     try {
       const response = await axios.get('https://jsonplaceholder.typicode.com/users')
       const users = response.data
-      console.log(users)
+
       setUsers(users)
 
       if (userName) {
